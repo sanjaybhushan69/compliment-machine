@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compliment Machine ✨</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
 
+  <div class="page">
+
+    <!-- Background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Floating sparkles -->
+    <span class="spark s1">✨</span>
+    <span class="spark s2">💫</span>
+    <span class="spark s3">🌸</span>
+    <span class="spark s4">⭐</span>
+    <span class="spark s5">✨</span>
+
+    <!-- Header -->
+    <div class="badge">Free compliments inside</div>
+    <h1 class="title">Compliment Machine</h1>
+    <p class="subtitle">Type your name & receive a little love 🌸</p>
+
+    <!-- Glass card -->
+    <div class="glass-card">
+
+      <div class="input-row">
+        <input type="text" id="nameInput" placeholder="Your name..." maxlength="20" />
+        <button onclick="generate()">Compliment me ✨</button>
+      </div>
+
+      <div class="result-area">
+        <p class="placeholder" id="placeholder">Your personalised compliment appears here...</p>
+        <p class="quote" id="quote"></p>
+        <p class="for-name" id="forName"></p>
+      </div>
+
+      <hr class="divider" id="divider" />
+      <div style="text-align: center;">
+        <button class="copy-btn" id="copyBtn" onclick="copyIt()">Copy compliment 📋</button>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">Made with 💖 for spreading good vibes</p>
+    <p class="counter" id="counter"></p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
